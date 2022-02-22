@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/jms4tja.css");
+
 :root {
   --background-color: white;
   --black-font-color: black;
@@ -9,6 +11,58 @@
 
 * {
   box-sizing: border-box;
+}
+
+/* Fonts */
+
+h1 {
+  font-family: effra, sans-serif;
+
+  font-weight: 700;
+
+  font-style: normal;
+}
+
+h2 {
+  font-family: effra, sans-serif;
+
+  font-weight: 700;
+
+  font-style: normal;
+}
+
+h3 {
+  font-family: effra, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
+}
+
+h4 {
+  font-family: effra, sans-serif;
+
+  font-weight: 300;
+
+  font-style: normal;
+}
+
+p {
+  font-family: effra, sans-serif;
+
+  font-weight: 300;
+
+  font-style: normal;
+}
+
+li {
+  font-family: effra, sans-serif;
+
+  font-weight: 300;
+
+  font-style: normal;
+
+  color: var(--grey-font-color);
 }
 
 /* reset */
@@ -98,6 +152,11 @@ body {
   border-radius: 5px;
   padding: 5px 5px;
   padding-right: 15em;
+  margin-left: 5px;
+}
+
+.logo {
+  margin-right: 10em;
 }
 
 /* main content gabbage */
@@ -110,6 +169,7 @@ body {
 
 .main-content > * {
   margin: 0;
+  position: relative;
 }
 
 .main-content img {
@@ -128,7 +188,7 @@ body {
   margin-top: 5px;
 }
 
-.ranking {
+.main-content .ranking {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -207,6 +267,11 @@ body {
   margin-right: 5px;
 }
 
+.text2 {
+  display: flex;
+  justify-content: center;
+}
+
 .secondary-content2 .products {
   padding-right: 20px;
 }
@@ -223,4 +288,56 @@ body {
 .secondary-content2 .image-info2 {
   display: flex;
   justify-content: space-between;
+}
+
+footer {
+  background-color: var(--button2-color);
+  padding: 200px;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .search {
+    border-radius: 5px;
+    padding: 5px 5px;
+    padding-right: 5em;
+    margin-left: 5px;
+  }
+
+  .logo {
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .main-content {
+    width: 100%;
+  }
+
+  .search {
+    border-radius: 5px;
+    padding: 5px 5px;
+    padding-right: 0.5em;
+    margin-left: 5px;
+  }
+
+  .ranking > * {
+    margin: 0px;
+    padding: 0.5em;
+    font-size: 1.5em;
+  }
+
+  .ingridients > * {
+    padding-right: 4em;
+    padding-left: 4em;
+    margin-bottom: 0;
+  }
+
+  .logo {
+    margin: 0px;
+  }
+
+  * {
+    margin: 0px;
+  }
 }
