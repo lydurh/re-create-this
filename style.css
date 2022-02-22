@@ -1,9 +1,10 @@
 :root {
   --background-color: white;
-  --font-color: black;
-  --grey-font-color: grey;
+  --black-font-color: black;
+  --white-font-color: white;
+  --grey-font-color: #8c8c8c;
   --button1-color: red;
-  --button2-color: grey;
+  --button2-color: #eaeaea;
 }
 
 * {
@@ -46,7 +47,7 @@ body {
   color: #ffffff;
   font-family: Arial;
   font-size: 17px;
-  padding: 16px 31px;
+  padding: 10px 16px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #854629;
 }
@@ -67,10 +68,10 @@ body {
   border: 1px solid;
   display: inline-block;
   cursor: pointer;
-  color: #ffffff;
+  color: black;
   font-family: Arial;
   font-size: 17px;
-  padding: 16px 31px;
+  padding: 10px 16px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #854629;
 }
@@ -80,4 +81,21 @@ body {
 }
 .greyButton:active {
   position: relative;
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  background-color: var(--button2-color);
+  color: var(--grey-font-color);
+  text-align: left;
+  border-radius: 5px;
+  padding: 5px 5px;
+  padding-right: 15em;
 }
