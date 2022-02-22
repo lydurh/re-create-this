@@ -99,3 +99,72 @@ body {
   padding: 5px 5px;
   padding-right: 15em;
 }
+
+/* main content gabbage */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content > * {
+  margin: 0;
+}
+
+.main-content img {
+  max-width: 40%;
+  padding-bottom: 0px;
+}
+
+.main-content h3 {
+  font-size: 2em;
+  padding-top: 0px;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
+.main-content h4 {
+  margin-top: 5px;
+}
+
+.ranking {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.ranking > * {
+  margin: 0px;
+  padding: 1.2em;
+}
+
+.ingridients {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ingridients > * {
+  padding-right: 6.5em;
+  padding-left: 6.5em;
+  margin-bottom: 0;
+}
+
+.main-content ul > li {
+  padding-top: 5px;
+  margin-right: 0em;
+  margin-left: 4em;
+  margin-top: 5px;
+}
+
+.main-content ul {
+  margin-bottom: 10px;
+}
+
+.mainContent-buttons {
+  padding-right: 22em;
+  padding-top: 1em;
+}
+
+/* secondary content */
